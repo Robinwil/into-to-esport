@@ -1,0 +1,174 @@
+/*R Imports font from google */
+@import url("https://fonts.googleapisN.com/css?family=Roboto");
+
+
+/*R --text-color ; used in a var() change the 
+colour in root and change all of them*/
+:root {
+    --text-color: aliceblue;
+    --background-purple-color: #18152c;
+    --sub-dark-background-purple: #1e112e;
+}
+
+/* 1c1b22 */
+* {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*R vh=viewport height */
+body {
+    min-height: 100vh;
+}
+
+/* R idk yet */
+html {
+    color-scheme: dark light;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+body {
+    background-color: var(--background-purple-color);
+}
+
+/* robin */
+/**-----================= main-menu =================-----**/
+header {
+    background: var(--background-purple-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 230px 130px;
+    transition: 0.5s;
+}
+
+.center-nav {
+    justify-self: center;
+
+}
+.logo {
+    justify-self: center;
+    width: 14rem;
+    height: 11rem;
+    margin-top: 1rem;
+    box-shadow: 8px 8px 22px -2px rgba(0,0,0,0.75);
+    object-fit: cover;
+}
+
+header ul {
+    width: 100%;
+    height: 0rem;
+    background-color: var(--background-purple-color);
+}
+
+header ul>li {
+    list-style: none;
+    display: inline-block;
+    /* float: left; */
+    line-height: 4rem;
+
+}
+
+header ul>li>a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: white;
+    padding: 0 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: orange;
+}
+
+@media (max-width: 991px) {
+
+    header {
+        padding: 0rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    header ul>li>a {
+        padding: 0 0.2rem;
+    }
+}
+
+/**-----================= main-menu end =================-----**/
+
+
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+    margin: 0 0 32px;
+
+
+    line-height: 2rem
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-weight: 500;
+    margin: 64px 0 16px;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 30px;
+        font-size: 1.875rem;
+        line-height: 34px;
+        line-height: 2.125rem;
+    }
+}
+@media screen and (max-width:767px) {
+    p {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+}
+
+main {
+    overflow:hidden;
+}
